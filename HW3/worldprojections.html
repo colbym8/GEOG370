@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map Projections</title>
+</head>
+<body>
+    <h1>World Map Projections</h1>
+    <p>The following projections used the QGIS Indicatrix Mapping plugin to display<br>
+    lines of latitude and longitude, as well as the depicted ellipsoids allowing for<br>
+    shape and area comparisons. The vector layer used was from natural earth and was<br>
+    altered using different projections found in the QGIS projection database. Each<br>
+    projection selected altered the Indicatrix display to adjust to that projection.
+    </p>
+
+    <h2>Aitoff Azimuthal</h2>
+    <a href="./EPSG_54043.png">
+        <img src="./EPSG_54043.png" alt="WGS84" width='500px'>
+    </a>
+    <p>This map shows an azimuthal Aitoff projection with equidistant measurements<br>
+        that come at the expense of geographical shape and area. This equatorial<br>
+        azimuthal projection shows the equator and prime meridian as normal lines<br>
+        and ellipsoidal shape distortions at longitudes and latitudes of larger magnitudes.
+    </p>
+
+    <h2>WGS 84 Mercator</h2>
+     <a href="./EPSG_4326.png">
+         <img src="./EPSG_4326.png"alt="WGS84" width='500px'>
+    </a>
+    <p>This map shows a WGS84 mercator projection in which the size and shape<br>
+        become distorted at longitudes of higher magnitudes. This map creates line of<br>
+        longitude and latitude that are parallel to one another as to create grid of<br>
+        squares. Area and distances are both distorted.
+    </p>
+
+    <h2>WGS 84 Pseudo-Mercator</h2>
+    <a href="./EPSG_3857.png">
+            <img src="./EPSG_3857.png" alt="WGS84" width='500px'>
+    </a>
+    <p>This is a pseudo mercator projection where geographic shape is maintained however<br>
+        distance and size are distorted. The latitude and longitude lines are parallel to<br>
+        each other and create a grid of rectangles that are elongated closer to the poles.
+    </p>
+
+    <h2>Sphere Winkel I</h2>
+    <a href="./ESRI_53018.png">
+            <img src="./ESRI_53018.png" alt="WGS84" width='500px'>
+    </a>
+    <p>The sphere winkel map is a pseudo-cylindrical projection and attempts to minimize<br>
+        distortions of distance, area, and shape all in the same map, however each<br>
+        characteristic has minor distortions.
+    </p>
+
+    <h2>Equal Area Cylindrical</h2>
+    <a href="./ESRI_54034.png">
+            <img src="./ESRI_54034.png" alt="WGS84" width='500px'>
+            </a>
+    <p>The world cylindrical projection is an equal area map in which land mass sizes are<br>
+    proportionate to each other, however distances and shapes are distorted.
+    </p>
+
+    <h2>Equidistant Conical</h2>
+    <a href="./ESRI_54027.png">
+            <img src="./ESRI_54027.png" alt="WGS84" width='500px'>
+    </a>
+    <p>The world equidistant conical map is a projection that accurately displays distance between<br>
+    any two points on the map, however this proportionality doesn't apply to shape or area. This<br>
+    projection is used for spatial analysis requiring accurate distance estimations using great circles.
+    </p>
+
+    <h2>North-Pole Azimuthal</h2>
+    <a href="./ESRI_102016.png">
+            <img src="./ESRI_102016.png" alt="WGS84" width='500px'>
+    </a>
+    <p>The North-Pole azimuthal equidistant map is a projection where the north pole is the center<br>
+    point from which all distances are proportional from point to point, very similar to the ESRI_54027<br>
+    projection shown above.
+    </p>
+
+    <h2>Spherical Quartic Authalic</h2>
+    <a href="./ESRI_53022.png">
+            <img src="./ESRI_53022.png" alt="WGS84" width='500px'>
+            </a>
+    <p>This spherical quartic authalic map is equal area, however shape and distance are distorted.<br>
+    This is commonly used in Google Maps and OpenStreetMap.
+    </p>
+
+    <h2>Goode Homosoline</h2>
+     <a href="./ESRI_54052.png">
+            <img src="./ESRI_54052.png" alt="WGS84" width='500px'>
+            </a>
+    <p>This projection attempts to maintain area and shape for landmasses with the exception of land<br>
+    extremely close to the poles. Shapes and areas of oceans are distorted, as are areas for both<br>
+    landmasses and bodies of water, showing accurate sizes and areas for inhabited regions.
+    </p>
+
+</body>
+</html>
