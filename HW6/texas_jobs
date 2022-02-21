@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employed People in Texas</title>
+</head>
+<body>
+    <h2>Homework 6: Choropleth Map</h2>
+    <h3>Colby Mask</h3>
+    <p>The map depicts the total number of employed people within the 20-24 age group in<br>
+        each Texas county. Five of the ten most populous counties in the state are referenced<br>
+        in the map. 
+    </p>
+    <a href="./texas_jobs.png">
+        <img src="./texas_jobs.png">
+    </a>
+    <h3>Datasets</h3>
+    <a href="./tx_employment_census_clean.csv"><h3>Clean CSV</h3></a>
+    <a href="./texas_counties.geojson"><h3>Texas Counties Vector</h3></a>
+</body>
+</html>
