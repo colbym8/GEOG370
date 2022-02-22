@@ -16,30 +16,45 @@
     </a>
     <p>This map uses an equal count scale, meaning the 254 counties in the state of<br>
         Texas are divided evenly into five different classes. Equal count categorization<br>
-        creates a map with equal representation of the five classes, however it can skew<br>
+        creates a map with equal representation of the five classes. However, it can skew<br>
         how the data is perceived in the case of outlier counties being grouped with<br>
         counties of much larger or smaller magnitudes. Another limitation could be two<br>
-        counties with similar employment participation values being placed in two different<br>
+        counties with very similar employment participation values being placed in two different<br>
         classes because they fall at the minimum value of one class and the maximum value<br>
-        of another. 
+        of another.
     </p>
 
     <h3>Equal Interval Scale</h3>
      <a href="./ratio maps/equal_interval_jobs.png">
          <img src="./ratio maps/equal_interval_jobs.png"alt="Equal Interval" width='500px'>
     </a>
-    <p>This map shows a WGS84 mercator projection in which the size and shape<br>
-        become distorted at longitudes of higher magnitudes. This map creates line of<br>
-        longitude and latitude that are parallel to one another as to create grid of<br>
-        squares. Area and distances are both distorted.
+    <p>This map uses an equal interval scale, meaning the five classes are broken into five<br>
+        equal intervals, in this case five intervals of 20% each. This categorization can<br>
+        be useful when showing data that has a large range, however more than half of the<br>
+        counties employment participation percentage lies in the 60%-80% class, which doesn't<br>
+        allow for differentiation between the counties that are closer to 60% participation<br>
+        and those that are closer to 80%. The equal interval scale shows that the equal<br>
+        count scale has more drawbacks for this specfic data set, being that 80% of Texas<br>
+        counties have an employment participation rate of at least 64% (based on the logic<br>
+        that each class has an equal amount and four of the five classes have a rate of 64%<br>
+        or greater), however the equal count scale represents counties that might have a<br>
+        63% rate and another with an 81% rate as being 4 classes apart from one another.
     </p>
 
     <h3>Natural Breaks Scale</h3>
      <a href="./ratio maps/natural_breaks_jobs.png">
          <img src="./ratio maps/natural_breaks_jobs.png"alt="Natural Breaks" width='500px'>
     </a>
-    <p>This map shows a WGS84 mercator projection in which the size and shape<br>
-        become distorted at longitudes of higher magnitudes. This map creates line of<br>
-        longitude and latitude that are parallel to one another as to create grid of<br>
-        squares. Area and distances are both distorted.
+    <p>This map uses a natural breaks scale, meaning the five classes are broken based<br>
+        on where natural gaps or significant margins exist between clusters of county<br>
+        participation values. Natural break categorization is the most fitting for this<br>
+        (and many other) data sets, because it allows the viewer to understand that many<br>
+        Texas counties have similar employment participation rates among the 20-24 age group,<br>
+        while more clearly identifying outlier groups. This natural breaks map has a similar<br>
+        appearance to the equal interval map due to the nature of the data clustering around<br>
+        the 60%-80% range, but it is able to more precisely categorize the data in the 0%-8%<br>
+        class (8% is more precise than 20%) and in the 82% to 100% class (18% is more precise<br>
+        thank 20%).
     </p>
+</body>
+</html>
