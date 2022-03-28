@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence Transportation Network</title>
+</head>
+<body>
+    <h2>Florence Transportation Network</h2>
+    <p>"How will I navigate Tuscany when I'm studying abroad in Florence this fall?"<br>
+    I'm an environmental science major studying smart cities, and I'm interested in<br>
+    transportation systems, Italian culture, and traveling. This is going to be my<br>
+    first experience outside of the United States, so I wanted to make a map featuring<br>
+    the different transportation lines in the Florence Metro Area, including major<br>
+    roads, railways, biking paths, and walking paths.</p><br>
+    <a href="./firenze_transportation.png">
+        <img src="./firenze_transportation.png" alt="WGS84" width='500px'>
+        </a>
+    <br><p>This map shows all of the different transportation systems mentioned above, combined<br>
+    in one layer as a transportation 'network'. I also displayed the cities and towns,<br>
+    with their population ranges, in the region surrounding Florence.<br>
+    I used five different vector layers to create one (1)Union layer that incorporated all<br>
+    of the systems into the network shown on the map. Then I used (2)Trim to create layers<br>
+    of Italian cities and Italian transportation lines that existed only inside the Florence<br>
+    metro area boundaries.<br>To create the reference/location map in the top right corner,<br>
+    I also used (3)Dissolve to create a polygon layer without the internal political boundaries<br>
+    the shapefile I downloaded originally had, creating an outline of Italy (because I was<br>
+    somehow struggling to find an outline).</p>
+    <br>
+<h3>All Transportation Data/Florence Boundaries:</h3><a href="https://www.dati.gov.it/"> Italian Government Open Data </a>
+<h3>Other Vector Files</h3>        
+        <a href="https://maps.princeton.edu/catalog/stanford-mn871sp9778">Italy Shapefile</a><p></p>
+        <a href="https://simplemaps.com/data/it-cities">Italian Cities/Towns w/ Population</a><p></p>
+
+</body>
+</html>
